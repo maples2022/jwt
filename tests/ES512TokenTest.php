@@ -80,7 +80,7 @@ class ES512TokenTest extends TestCase
 
         $builder->identifiedBy('1')
             ->permittedFor('https://client.abc.com')
-            ->issuedBy('https://api.abc.com')
+            ->issuedBy('https://api.abc.com2')
             ->withClaim('user', ['name' => 'testing', 'email' => 'testing@abc.com'])
             ->getToken($this->config->signer(), static::$rsaKeys['private']);
     }
