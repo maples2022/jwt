@@ -55,7 +55,7 @@ class HmacTokenTest extends TestCase
     /** @test */
     public function builderCanGenerateAToken(): Token
     {
-        $user    = ['name' => 'testing', 'email' => 'testing@abc.com'];
+        $user    = ['name' => 'testing', 'email' => 'testing@abc3.com'];
         $builder = $this->config->builder();
 
         $token = $builder->identifiedBy('1')
